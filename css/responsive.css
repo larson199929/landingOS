@@ -1,0 +1,9 @@
+@media only screen and (max-width: 900px){
+	.btnMenu > .fa-bars{
+		display:block;
+		position: absolute;
+		top:20px;
+		right:30px;
+		font-size: 28px;
+	}
+}

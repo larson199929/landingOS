@@ -1,0 +1,651 @@
+:root{
+	--red:#e40017;
+	--black:#1e212d;
+	--blue:#28527a;
+	--white:#f6f6f6;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: white;
+	overflow-x: hidden;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/*Menu de Navegación*/
+#header{
+	position:relative;
+	width:100%;
+}
+.menu{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index:9999;
+}
+.menu .logoBox{
+	margin-left: 20px;
+}
+.menu .logoBox h1 a{
+	text-decoration: none;
+	font-size: 35px;
+	font-weight: 400;
+	color:var(--black);
+}
+.menu .listContaine{
+	margin-right: 20px;
+}
+.menu .listContainer .lista{
+	display: flex;
+}
+.menu .listContainer .lista li{
+	list-style: none;
+}
+.menu .listContainer .lista li a{
+	text-decoration: none;
+	margin:0px 10px;
+	padding:8px;
+	color:var(--black);
+	border-radius: 24px;
+	font-size: 16px;
+	transition:0.3s;
+}
+.menu .listContainer .lista li a.active{
+	background-color: var(--red);
+	color:white;
+}
+.menu .listContainer .lista li a:hover{
+	background-color: var(--red);
+	color:white;
+}
+.btnMenu > .fa-bars{
+	display:none;
+}
+
+/*IMG Header*/
+.imgHeader{
+	position:relative;
+	width:100%;
+	height:100vh;
+	background: url(../img/header.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+.imgHeader .welcome{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.imgHeader .welcome h1{
+	font-size: 50px;
+	color:white;
+	font-weight: 200;
+}
+.imgHeader .welcome hr{
+	width: 400px;
+	height: 2px;
+	background: white;
+	border:none;
+	margin-top:5px;
+}
+.imgHeader .welcome p{
+	font-size: 20px;
+	color:white;
+	margin-top:20px;
+}
+.imgHeader .welcome > button{
+	width:170px;
+	height: 40px;
+	background: var(--red);
+	border-radius: 24px;
+	border:none;
+	outline: none;
+	font-size: 22px;
+	color:white;
+	text-align:center;
+	margin-top:20px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.imgHeader .welcome > button:hover{
+	background: var(--blue);
+}
+
+/*Acerca de Nosotros*/
+.acercaNosotros{
+	width:100%;
+	margin-top:120px;
+}
+.acercaNosotros .infoContainer{
+	width:80%;
+	margin:auto;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.acercaNosotros .infoContainer h1{
+	font-size: 50px;
+	font-weight: 400;
+	color: var(--black);
+	text-align: center;
+	margin-bottom: 20px;
+}
+.acercaNosotros .infoContainer p{
+	text-align: center;
+	font-size: 17px;
+	color: var(--black);
+	line-height: 30px;
+	margin: 10px 0px;
+}
+.acercaNosotros .infoContainer .aboutGallery{
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	margin: 50px 0px;
+}
+.acercaNosotros .infoContainer .aboutGallery img{
+	width: calc(33.33% - 10px);
+	height: 300px;
+	object-fit: cover;
+	margin: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	border: 2px solid black;
+}
+.acercaNosotros .infoContainer .acercaMore{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.acercaNosotros .infoContainer .acercaMore button{
+	width:120px;
+	height: 40px;
+	background: var(--red);
+	border-radius: 24px;
+	border:none;
+	outline: none;
+	font-size: 22px;
+	color:white;
+	text-align:center;
+	margin-top:20px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.acercaNosotros .infoContainer .acercaMore button:hover{
+	background: var(--blue);
+}
+
+/*Proyectos*/
+.proyectos{
+	position:relative;
+	width:100%;
+	height: 100%;
+	background: url(../img/F01.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	margin-top:100px;
+}
+.proyectos .degBackground{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.proyectos .ejeZproyecto{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+.proyectos .containerProyectos{
+	width:90%;
+	margin:auto;
+	padding-top:100px;
+}
+.proyectos .containerProyectos .proyectoTitulo{
+	border:2px solid white;
+	padding:10px;
+	text-align: center;
+	width:50%;
+	margin:auto;
+}
+.proyectos .containerProyectos .proyectoTitulo h1{
+	font-size: 40px;
+	color:white;
+	font-weight: normal;
+}
+.proyectos .containerProyectos .proyectoTitulo hr{
+	color:white;
+	width:50%;
+	margin:10px auto;
+	height: 2px;
+}
+.proyectos .containerProyectos .proyectoImg{
+	width:100%;
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top:80px;
+	padding-bottom: 100px;
+}
+.proyectos .containerProyectos .proyectoImg img{
+	width: calc(30% - 10px);
+	margin:10px;
+	object-fit: cover;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+/*Testimonios*/
+.testimonio{
+	width:100%;
+	margin-top: 120px;
+}
+.testimonio .tituloTestimonios{
+	width: 50%;
+	margin:auto;
+	text-align:center;
+}
+.testimonio .tituloTestimonios h2{
+	font-size: 50px;
+	color: var(--black);
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.testimonio .tituloTestimonios hr{
+	width:60%;
+	margin:auto;
+	height: 2px;
+	background: var(--black);
+	border:none;
+}
+.testimonio .boxTestimonios{
+	width:90%;
+	margin: 80px auto;
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.testimonio .boxTestimonios .cardTestimonio{
+	width:45%;
+	margin:20px;
+}
+.testimonio .boxTestimonios .cardTestimonio .cardImg{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.testimonio .boxTestimonios .cardTestimonio .cardImg img{
+	width:150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	cursor: pointer;
+	border: 2px solid black;
+}
+.testimonio .boxTestimonios .cardTestimonio .textTestimonio{
+	width:100%;
+	border:2px solid var(--red);
+	padding:20px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 200ms;
+	margin-top:30px;
+}
+.testimonio .boxTestimonios .cardTestimonio .textTestimonio:hover{
+	border:2px solid var(--blue);
+}
+.testimonio .boxTestimonios .cardTestimonio .textTestimonio h4{
+	color: var(--red);
+	font-weight: normal;
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 20px;
+	transition: 200ms
+}
+.testimonio .boxTestimonios .cardTestimonio .textTestimonio:hover h4{
+	color:var(--blue);
+}
+.testimonio .boxTestimonios .cardTestimonio .textTestimonio p{
+	font-size: 19px;
+	color:var(--black);
+	text-align: center;
+	line-height: 30px;
+	transition: 200ms
+}
+
+/*footer*/
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/footer.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.footer .degFooter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.footer .ejeZFooter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.footer .footerContent{
+    padding-top: 100px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.footer .footerContent .footerTitulo{
+    width: 50%;
+    margin: auto;
+    border:2px solid #fff;
+    padding:15px;
+}
+.footer .footerContent .footerTitulo h2{
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.footer .footerContent .footerTitulo hr{
+    background: #fff;
+    height: 2px;
+    width: 80%;
+    margin:auto;
+}
+.footer .formularioContent{
+    width: 60%;
+    margin: 50px auto;
+    background: #fff;
+    padding:30px;
+    border-radius: 50px;
+    border: 1.5px solid var(--red);
+}
+.footer .formularioContent #formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .formularioContent #formulario label{
+    font-size: 20px;
+    text-align: center;
+    color: var(--black);
+    margin: 30px 0px 10px 0px;
+}
+.footer .formularioContent #formulario input{
+    width: 90%;
+    height: 40px;
+    margin:auto;
+    border-radius: 24px;
+    outline: none;
+    border:1.5px solid var(--red);
+    text-align: center;
+    font-size: 18px;
+    color: var(--black);
+}
+.footer .formularioContent #formulario textarea{
+    width: 90%;
+    height: 200px;
+    margin:auto;
+    padding: 20px;
+    border-radius: 24px;
+    outline: none;
+    border:1.5px solid var(--red);
+    font-size: 15px;
+    color: var(--black);
+}
+.footer .formularioContent #formulario .enviar{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+.footer .formularioContent #formulario button{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background: var(--red);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer .formularioContent #formulario button:hover{
+    background: var(--blue);
+}
+.footer .formularioContent #formulario .mensajeForm{
+    width: 100%;
+    margin:auto;
+    padding:20px;
+    text-align:center;
+}
+.footer .formularioContent #formulario .mensajeForm p{
+    font-size:19px;
+    color: var(--black);
+    line-height: 35px;
+}
+.footer .footerText{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #fff;
+}
+.footer .footerText p{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.home{
+    position: fixed;
+    bottom: 100px;
+    right: -100%;
+    width: 50px;
+    height: 50px;
+    border:2px solid var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 0.5s;
+}
+.home:hover{
+    background: var(--red);
+    color:green;
+    border: 2px solid var(--white);
+}
+.home:hover span{color:var(--white);}
+
+.home > span{
+   font-size: 30px;
+   color: var(--black);
+}
+
+/*linea diagonal*/
+.diagonalAbajo{
+	position:absolute;
+	bottom:0;
+	left:0;
+	border-width: 0 0 5vh 100vw;
+	border-style: solid;
+	border-color: transparent transparent white transparent;
+}
+.diagonalArriba{
+	position:absolute;
+	top:0;
+	left:0;
+	border-width: 5vh 100vw 0 0;
+	border-style: solid;
+	border-color: white transparent transparent transparent;
+	z-index:10;
+}
+
+
+/*RESPONSIVIO*/
+
+@media only screen and (max-width: 900px){
+	.btnMenu > .fa-bars{
+		display:block;
+		position: absolute;
+		top:20px;
+		right:30px;
+		font-size: 28px;
+		cursor:pointer;
+	}
+	.btnMenu > .fa-bars:hover{
+		color:var(--red);
+	}
+	.btnMenu > .fa-bard:hover{
+		color:var(--red);
+	}
+	.menu .listContainer{
+		position:absolute;
+		top:60px;
+		left:-100%;
+		width: 100%;
+		height: calc(100vh - 60px);
+		background: white;
+	}
+	.menu .listContainer .lista{
+		width:100%;
+		height: 100%;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+		flex-direction: column;
+		border-top:5px solid var(--red);
+	}
+	.menu .listContainer .lista li{
+		width:90%;
+		margin:10px 0px;
+		border-bottom: 1px solid var(--red);
+		text-align: center;
+	}
+	.menu .listContainer .lista li a{
+		font-size:20px;
+	}
+	.menu .listContainer .lista li a.active{
+		background: none;
+		color:var(--red);
+	}
+	.menu .listContainer .lista li a:hover{
+		background: none;
+		color:var(--red);
+	}
+}
+
+@media only screen and (max-width: 773px){
+	.imgHeader .welcome h1{
+		font-size: 40px;
+	}
+	.imgHeader .welcome > button{
+		width:130px;
+		font-size: 20px;
+	}
+
+	.acercaNosotros .infoContainer .aboutGallery{
+		flex-direction: column;
+	}
+	.acercaNosotros .infoContainer .aboutGallery img{
+		width: 100%;
+	}
+
+	.proyectos .containerProyectos .proyectoImg img{
+		width:100%;
+		margin-bottom:30px;
+	}
+
+}
+
+@media only screen and (max-width: 590px){
+	.imgHeader .welcome h1{
+		font-size: 30px;
+	}
+	.imgHeader .welcome hr{
+		width: 90%;
+	}
+	.imgHeader .welcome p{
+		font-size: 17px;
+	}
+	.imgHeader .welcome > button{
+		width: 100px;
+		font-size: 17px;
+	}
+}
+
+@media only screen and (max-width: 890px){
+	.testimonio .boxTestimonios .cardTestimonio .cardImg img{
+		width: 200px;
+		height: 200px;
+	}
+	.testimonio .boxTestimonios .cardTestimonio{
+		width: 100%;
+	}
+	.testimonio .boxTestimonios .cardTestimonio .textTestimonio h4{
+		font-size: 25px;
+	}
+	.testimonio .boxTestimonios .cardTestimonio .textTestimonio p{
+		font-size: 17px;
+	}
+
+}
+
+@media only screen and (max-width:900px){
+	.footer .formularioContent{
+		width:95%;
+		padding:20px;
+	}
+	.footer .formularioContent #formulario input{
+		width:100%;
+	}
+	.footer .formularioContent #formulario textarea{
+		width:100%;
+	}
+}

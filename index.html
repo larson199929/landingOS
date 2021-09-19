@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Plantilla LandingPage | Inicio</title>
+
+	<!--Estilos-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<!--Fuente-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+	<!--Ir Arriba-->
+	 <div class="home">
+    	<span class="fas fa-level-up-alt"></span>
+  	 </div>
+
+	<!--Menu de Navegacion-->
+	<header id="header">
+		<nav class="menu">
+			<div class="logoBox">
+				<h1>
+					<a href="#">OpenPet</a>
+				</h1>
+				<span class="btnMenu"><i class="fas fa-bars"></i></span>
+			</div>
+
+			<div class="listContainer">
+				<ul class="lista">
+					<li>
+						<a href="#" class="active">Inicio</a>
+					</li>
+					<li>
+						<a href="#Nosotros" >Nosotros</a>
+					</li>
+					<li>
+						<a href="#" >Servicios</a>
+					</li>
+					<li>
+						<a href="#" >Blog</a>
+					</li>
+					<li>
+						<a href="#">Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!--IMG Header-->
+		<div class="imgHeader">
+			<div class="welcome">
+				<h1>Bienvenidos</h1>
+				<hr>
+				<p>Amantes de los animales</p>
+				<button id="abajo">Ver Abajo</button>
+			</div>
+		</div>
+
+		<div class="diagonalAbajo" id="Nosotros"></div>
+	</header>
+
+	<main>
+		<!--Acerca de Nosotros-->
+		<section class="acercaNosotros">
+			<div class="infoContainer">
+				<h1 id=>¿Que es OpenPet?	</h1>
+				<p>
+Somos un grupo que trabaja con distintas veterinarias y hospedajes a nivel local para que puedas conocer mucho acerca de ellas sobre los servicios que brindan para tus mascotas				</p>
+				<p>
+En OpenPet esperamos poder cumplir con tus expectativas tanto en precio como los servicios que ofrecemos 			</p>
+
+				<!--Galeria de Imagenes-->
+				<div class="aboutGallery">
+					<img src="img/nosotros/01.jpg" alt="">
+					<img src="img/nosotros/02.jpg" alt="">
+					<img src="img/nosotros/03.jpg" alt="">
+				</div>
+
+			
+			</div>
+		</section>
+
+		
+
+		<!--Testimonios-->
+		<section class="testimonio">
+			<div class="tituloTestimonios">
+				<h2>Nuestro Equipo</h2>
+				<hr>
+			</div>
+
+			<div class="boxTestimonios">
+
+				<div class="cardTestimonio">
+					<div class="cardImg">
+						<img src="img/personas/01.jpg" alt="">
+					</div>
+					<div class="textTestimonio">
+						<h4>Persona 1</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel vulputate tellus, id viverra urna.</p>
+					</div>
+				</div>
+
+				<div class="cardTestimonio">
+					<div class="cardImg">
+						<img src="img/personas/02.jpg" alt="">
+					</div>
+					<div class="textTestimonio">
+						<h4>Persona 2</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel vulputate tellus, id viverra urna.</p>
+					</div>
+				</div>
+
+				<div class="cardTestimonio">
+					<div class="cardImg">
+						<img src="img/personas/03.jpg" alt="">
+					</div>
+					<div class="textTestimonio">
+						<h4>Persona 3</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel vulputate tellus, id viverra urna.</p>
+					</div>
+				</div>
+
+				<div class="cardTestimonio">
+					<div class="cardImg">
+						<img src="img/personas/04.jpg" alt="">
+					</div>
+					<div class="textTestimonio">
+						<h4>Persona 4</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel vulputate tellus, id viverra urna.</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</main>
+
+	<!--Footer-->
+	<footer class="footer">
+		<div class="diagonalArriba"></div>
+		<!--Degradado-->
+		<div class="degFooter"></div>
+		<div class="ejeZFooter">
+			<div class="footerContent">
+				<div class="footerTitulo">
+					<h2>Formulario de Contacto</h2>
+					<hr>
+				</div>
+
+				<div class="formularioContent">
+					<form id="formulario">
+						<label for="user">Nombre</label>
+						<input type="text" id="user" name="user" placeholder="Ingresa Nombre">
+
+						<label for="email">Correo Electronio</label>
+						<input type="email" id="email" name="email" placeholder="Ingresa Correo Electronico">
+
+						<label for="mensaje">Escribe tu Mensaje</label>
+						<textarea name="mensaje" id="mensaje"></textarea>
+
+						<div class="enviar">
+							<button>Enviar</button>
+						</div>
+
+						<div class="mensajeForm">
+							<p>Deja tus dudas o comentarios</p>
+						</div>
+					</form>
+				</div>
+
+				<div class="footerText">
+					<p>&copy; OpenPet 2021 | Derechos Reservados</p>
+				</div>
+			</div>
+
+			
+		</div>
+	</footer>
+	
+	<!--Scripts-->
+	<script src="https://kit.fontawesome.com/15876357fa.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
